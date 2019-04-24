@@ -1,2 +1,3 @@
 def is_prime?(num)
-  for(2..(num-1))
+  (2..(num-1)).each do |n|
+    return false if num%n == 0 
